@@ -1,6 +1,4 @@
-import json
-
-
 class Patient:
-    def __init__(self, j):
-        self.__dict__ = json.loads(j)
+    def __init__(self, json):
+        self.age = json["age"]
+        self.__dict__ = json
