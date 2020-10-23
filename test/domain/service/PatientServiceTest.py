@@ -14,7 +14,7 @@ class MyTestCase(unittest.TestCase):
             patient = Patient(data)
             self.assertTrue(self.patient_service.is_valid(patient))
 
-    def test_patient_is_not_valid(self):
+    def test_patient_age_is_not_valid(self):
         with open('../../resource/not_adult_patient.json') as json_file:
             data = json.load(json_file)
             patient = Patient(data)
